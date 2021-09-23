@@ -1,0 +1,25 @@
+<main>
+    <div style="background-color: #4f3183">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 text-center text-lg-start text-white d-flex align-items-center justify-content-center">
+                    <div>
+                        <h1>The best</h1>
+                        <h1 class="text-warning display-2 roboto">Open Source Community</h1>
+                        <h1>to share content</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <img src="assets/images/pen.png" class="img-fluid w-75">
+                </div>
+            </div>	
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="d-flex align-items-center justify-content-between bg-light mb-3 p-3">
+            <h2 class="m-0 roboto text-danger roboto fw-bold">Popular Posts</h2>
+            <a href="#" [routerLink]="['/blog']" class="btn btn-outline-danger">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <app-posts class="row" [colClass]="['col-lg-3']"></app-posts>
+    </div>
+</main>

@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+    <img src="https://source.unsplash.com/1280x720" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title fw-bold roboto">{{ post1.title }}</h5>
+        <p class="card-text">{{ post1.content }}</p>
+        <a href="#" [routerLink]="['/blog/edit', post1.id]" class="btn btn-dark me-3">Edit</a>
+        <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+    </div>
+</div>
